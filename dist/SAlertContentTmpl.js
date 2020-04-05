@@ -89,7 +89,7 @@
             value: function render() {
                 return _react2.default.createElement(
                     'div',
-                    { className: this.props.classNames, id: this.props.id, style: this.props.styles },
+                    { className: this.props.classNames, id: this.props.id, style: this.props.styles, ref: this.props.alertElemWrapperRef },
                     _react2.default.createElement(
                         'div',
                         { className: 's-alert-box-inner' },
@@ -110,7 +110,8 @@
         styles: _propTypes2.default.object.isRequired,
         message: _propTypes2.default.oneOfType([_propTypes2.default.string, _propTypes2.default.object]).isRequired,
         handleClose: _propTypes2.default.func.isRequired,
-        customFields: _propTypes2.default.object
+        customFields: _propTypes2.default.object,
+        alertElemWrapperRef: _propTypes2.default.shape({})
     };
 
     exports.default = SAlertContentTmpl;

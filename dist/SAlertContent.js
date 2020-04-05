@@ -189,9 +189,9 @@
                 var contentTemplate = this.props.contentTemplate || _SAlertContentTmpl2.default;
                 var customFields = this.props.customFields || {};
                 var condition = this.props.condition;
-                var ref = this.currentAlertElemWrapper;
+                var alertElemWrapperRef = this.currentAlertElemWrapper;
 
-                return _react2.default.createElement(contentTemplate, { ref: ref, classNames: classNames, id: id, styles: styles, message: message, handleClose: handleClose, customFields: customFields, condition: condition });
+                return _react2.default.createElement(contentTemplate, { alertElemWrapperRef: alertElemWrapperRef, classNames: classNames, id: id, styles: styles, message: message, handleClose: handleClose, customFields: customFields, condition: condition });
             }
         }]);
 

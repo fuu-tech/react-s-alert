@@ -5,7 +5,7 @@
         "node": true,
         "es6": true
     },
-    "ecmaFeatures": {
+    "parserOptions": {
         "modules": true
     },
     "rules": {
